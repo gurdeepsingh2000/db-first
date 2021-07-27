@@ -1,0 +1,16 @@
+name: concessionaria
+
+
+Column                      Type                                 Attributes                      Index
+
+id                          BIGINT UNSIGNED                      AUTO_INCREMENT, NOT NULL        PRIMARY KEY
+price                       DECIMAL(7,2)                         NOT_NULL                        INDEX
+fuel                        TEXT                                 NULL   
+transmission                TEXT                                 NULL        
+brand                       VARCHAR(50)                          NOT_NULL                        INDEX
+model                       VARCHAR(255)                         NOT_NULL, UNIQUE
+year_production             DATE                                 NULL
+km_done                     TINYINT UNSIGNED                     NULL
+year_registration           DATE                                 NULL
+n_seats                     TINYINT UNSIGNED                     NULL
+CV                          TINYINT UNSIGNED                     NULL
