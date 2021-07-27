@@ -5,8 +5,8 @@ Column                      Type                                 Attributes     
 
 id                          BIGINT UNSIGNED                      AUTO_INCREMENT, NOT NULL        PRIMARY KEY
 price                       DECIMAL(7,2)                         NOT_NULL                        INDEX
-fuel                        TEXT                                 NOT_NULL   
-transmission                TEXT                                 NOT_NULL        
+fuel                        VARCHAR(20)                                  NOT_NULL   
+transmission                VARCHAR(10)                                 NOT_NULL        
 brand                       VARCHAR(50)                          NOT_NULL                        INDEX
 model                       VARCHAR(255)                         NOT_NULL, UNIQUE
 year_production             DATE                                 NULL
